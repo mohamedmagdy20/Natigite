@@ -12,6 +12,6 @@ class ExportSubject implements FromCollection
     */
     public function collection()
     {
-        return Subject::all()->expect('created_at','updated_at');
+        return Subject::all();
     }
 }

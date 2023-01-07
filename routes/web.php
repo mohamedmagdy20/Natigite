@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\SubjectController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,5 +18,11 @@ Route::get('/', function () {
 });
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
+Route::middleware(['auth'])->prefix('admin')->group(function(){
+    Route::get('result',[SubjectController::class,'index'])->name('admin.result');
+    Route::get('result/create',[SubjectController::class,'create'])->name('result.create');
+    Route::post('result/store',[SubjectController::class,'import'])->name('result.store');
+    Route::get('result/export',[SubjectController::class,'export'])->name('export-result');
+    Route::get('result/template',[SubjectController::class,'downloadResultTemplate'])->name('result.template');
+});
 Auth::routes();
