@@ -17,11 +17,11 @@
                 </div>
             </div>
 
-            <div class="col-3">
+            {{-- <div class="col-3">
                 <div class="page-title-box d-sm-flex align-items-center justify-content-between">
                     <a href="{{route('result.template')}}" class="btn btn-info"> استخراج ملف</a>
                 </div>
-            </div>
+            </div> --}}
         </div>                      
 <div class="card">
 <div class="card-body">

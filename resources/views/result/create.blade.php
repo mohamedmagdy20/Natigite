@@ -29,10 +29,29 @@
             <div class="card-body">                
                 <form method="post" action="{{ route('result.store')}}"  class="needs-validation" enctype="multipart/form-data"  novalidate >
                     @csrf
-    
+                    <div class="row mb-3">
+                        <div class="col-sm-11">
+                            <label for="area">اضف المنطقة</label>
+                            <input type="text" name="area" class="form-control" value="" type="text"  required>
+                            @error('area')
+                            <span class="text-danger"> {{ $message }} </span>
+                            @enderror
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-sm-11">
+                            <label for="area">اضف المرحلة</label>
+                           <select name="level" id="" class="form-control">
+                            @foreach ($levels as $level)
+                                <option value="{{$level->name}}">{{$level->name}}</option>                     
+                            @endforeach
+                           </select>
+                        </div>
+                    </div>
                 <div class="row mb-3">
-                    <label for="example-text-input" class="col-sm-1 col-form-label">النتيجه</label>
                     <div class="col-sm-11">
+                    <label for="example-text-input" class="col-sm-1 col-form-label">النتيجه</label>
+
                         <input type="file" name="file" class="form-control" value="" type="text"  required>
                         @error('file')
                         <span class="text-danger"> {{ $message }} </span>

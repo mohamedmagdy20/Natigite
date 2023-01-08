@@ -5,6 +5,7 @@ namespace App\Imports;
 use App\Models\Subject;
 use Maatwebsite\Excel\Concerns\ToModel;
 use Maatwebsite\Excel\Concerns\WithStartRow;
+use Illuminate\Support\Facades\DB;
 
 class SubjectImport implements ToModel , WithStartRow
 {
@@ -55,7 +56,11 @@ class SubjectImport implements ToModel , WithStartRow
             
             'sport'=>$row[16] ?? null,
             
-            'status'=>$row[17] ??null
+            'status'=>$row[17] ??null,
+            'area_id'=> DB::table('area') ->latest()
+            ->first()
+            ->id,
+            'level_id'=>DB::table('level')->latest()->first()->id
         ]);
     }
 }
