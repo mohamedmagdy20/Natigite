@@ -5,9 +5,9 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">الصفحه الرئيسية</a></li>
-                <li class="nav-item"><a class="nav-link" href="#!">نتائج الامتحانات </a></li>
-                <li class="nav-item"><a class="nav-link" href="#!">من نحن</a></li>
-                <li class="nav-item"><a class="nav-link" href="#!">اخر الاخبار</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{route('index')}}">نتائج الامتحانات </a></li>
+                <li class="nav-item"><a class="nav-link" href="{{route('index')}}">من نحن</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{route('index')}}">اخر الاخبار</a></li>
             </ul>
         </div>
     </div>
