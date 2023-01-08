@@ -25,5 +25,6 @@ Route::middleware(['auth'])->prefix('admin')->group(function(){
     Route::post('result/store',[SubjectController::class,'import'])->name('result.store');
     Route::get('result/export',[SubjectController::class,'export'])->name('export-result');
     Route::get('result/template',[SubjectController::class,'downloadResultTemplate'])->name('result.template');
+    Route::get('result/delete/{id}',[SubjectController::class,'delete'])->name('result.delete');
 });
 Auth::routes();

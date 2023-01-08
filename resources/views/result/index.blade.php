@@ -70,6 +70,7 @@
             <th>حاسب الي</th>
             <th>تربيه رياضية</th>
             <th>الحاله</th>
+            <th>حذف</th>
         </thead>
         <tbody>
             @foreach ($subjects as $index => $subject )
@@ -93,6 +94,7 @@
                     <td>{{$subject->computer}}</td>
                     <td>{{$subject->sport}}</td>
                     <td>{{$subject->status}}</td>
+                    <td><a href="{{route('result.delete',$subject->id)}}" class="btn btn-danger">حذف</a></td>
                 </tr>    
             @endforeach
             

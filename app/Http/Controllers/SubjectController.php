@@ -26,7 +26,13 @@ class SubjectController extends Controller
         $subjects = $query->paginate(10);
         return view('result.index',compact('subjects'));
     }
+    public function delete($id)
+    {
+        $subject =Subject::find($id);
+        $subject->delete();
+        return back()->with('success','تم حذف النتيجه بنجاح');
 
+    }
     public function create()
     {
         $levels = DB::table('level')->get();
