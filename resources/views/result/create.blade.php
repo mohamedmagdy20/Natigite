@@ -43,7 +43,7 @@
                             <label for="area">اضف المرحلة</label>
                            <select name="level" id="" class="form-control">
                             @foreach ($levels as $level)
-                                <option value="{{$level->name}}">{{$level->name}}</option>                     
+                                <option value="{{$level->id}}">{{$level->name}}</option>                     
                             @endforeach
                            </select>
                         </div>

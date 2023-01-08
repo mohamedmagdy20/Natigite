@@ -29,7 +29,8 @@
         هام جداً: انضم لقناتنا على تليجرام لمعرفة أخبار النتيجة لحظة بلحظة من هنا: </b><a href="https://t.me/natiganezakr" style="display: inline-block;background-color: white;border-radius: 5px;width: 50px;text-align: center;color: #2daae1;border: 1.5px dotted black;"><i class="fa fa-telegram" aria-hidden="true"></i></a><br>  
         تابعنا عبر فيسبوك : <div class="fb-like fb_iframe_widget" data-href="https://www.facebook.com/nezakr" data-width="30" data-layout="button_count" data-action="like" data-size="small" data-share="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=676280533135342&amp;container_width=1108&amp;href=https%3A%2F%2Fwww.facebook.com%2Fnezakr&amp;layout=button_count&amp;locale=ar_AR&amp;sdk=joey&amp;share=true&amp;size=small&amp;width=30"><span style="vertical-align: bottom; width: 150px; height: 28px;"><iframe name="ff9be318ca4574" width="30px" height="1000px" data-testid="fb:like Facebook Social Plugin" title="fb:like Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://web.facebook.com/v5.0/plugins/like.php?action=like&amp;app_id=676280533135342&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df1abfd348946bb%26domain%3Dnatiga.nezakr.net%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fnatiga.nezakr.net%252Ff26b679f8b6645c%26relation%3Dparent.parent&amp;container_width=1108&amp;href=https%3A%2F%2Fwww.facebook.com%2Fnezakr&amp;layout=button_count&amp;locale=ar_AR&amp;sdk=joey&amp;share=true&amp;size=small&amp;width=30" style="border: none; visibility: visible; width: 150px; height: 28px;" class=""></iframe></span></div>
         </div>
-    <!-- Call to Action-->
+  
+        <!-- Call to Action-->
     {{-- <div class="card text-white bg-secondary my-5 py-4 text-center">
         <div class="card-body"><p class="text-white m-0">This call to action card is a great place to showcase some important information or display a clever tagline!</p></div>
     </div> --}}
@@ -41,7 +42,7 @@
                     <h3 class="card-title text-center">نتائج المرحله الابتدائية</h3>
                     <div class="list-group">
                         @foreach ($levels_one as $level )
-                            <a href="#" class="list-group-item list-group-item-action" style="text-decoration: #2daae1 !important">{{$level->name}}</a>
+                            <a href="{{route('index.result',$level->id)}}" class="list-group-item list-group-item-action" style="text-decoration: #2daae1 !important">{{$level->name}}</a>
                         @endforeach
                     </div>
                 </div>
@@ -53,7 +54,7 @@
                     <h3 class="card-title text-center">نتائج المرحله الاعدادية</h3>
                     <div class="list-group">
                         @foreach ($levels_two as $level)
-                            <a href="#" class="list-group-item list-group-item-action" style="text-decoration: #2daae1 !important">{{$level->name}}</a>
+                            <a href="{{route('index.result',$level->id)}}" class="list-group-item list-group-item-action" style="text-decoration: #2daae1 !important">{{$level->name}}</a>
                         @endforeach 
                        
                       </div>
@@ -66,7 +67,7 @@
                     <h3 class="card-title text-center">نتائج المرحله الثانويه</h3>
                     <div class="list-group">
                         @foreach ($levels_three as $level )
-                            <a href="#" class="list-group-item list-group-item-action" style="text-decoration: #2daae1 !important">{{$level->name}}</a>
+                            <a href="{{route('index.result',$level->id)}}" class="list-group-item list-group-item-action" style="text-decoration: #2daae1 !important">{{$level->name}}</a>
                         @endforeach
                         
                       </div>
@@ -79,7 +80,7 @@
         <div class="card h-100" style="background-color:#b6effb !important ">
             <div class="card-body">
                 <h3 class="card-title ">اخر الاخبار</h3>
-                <p>ظهرت على موقع نذاكر حصرياً <a href="#">{{$last_update->name}}</a>..
+                <p>ظهرت على موقع نذاكر حصرياً <a href="{{route('index.result',$last_update->id)}}">{{$last_update->name}}</a>..
 
                     ونقدم لكم أيضاً في موقع نذاكر وحصرياً نتيجة الثانوية العامة 2022 بالاسم ورقم الجلوس مع إمكانية معرفة الترتيب والمجاميع التكرارية للثانوية العامة والعديد من الخدمات المتميزة..</p>
             </div>

@@ -2,7 +2,28 @@
 @section('content')
 <div class="page-content p-2">
     <div class="container-fluid">
+        <div class="row mt-3 mb-4 justify-content-center">
+            <div class="col-6">
+                <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                   <form action="{{route('admin.result')}}" method="GET">
+                    <div class="row m-2">
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-control me-2" placeholder="اسم الطالب">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" name="code"  class="form-control me-2" placeholder="كود الطالب">
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-dark" value="ابحث">
+                        </div>
+                    </div>
+                 
+                   </form>
+                </div>
+            </div>
 
+            
+        </div>
         <!-- start page title -->
         <div class="row mt-3 mb-4 justify-content-center">
             <div class="col-3">

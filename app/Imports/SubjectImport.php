@@ -60,7 +60,7 @@ class SubjectImport implements ToModel , WithStartRow
             'area_id'=> DB::table('area') ->latest()
             ->first()
             ->id,
-            'level_id'=>DB::table('level')->latest()->first()->id
+            'level_id'=>DB::table('area')->latest()->first()->level_id
         ]);
     }
 }

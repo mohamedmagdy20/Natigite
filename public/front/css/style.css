@@ -11297,3 +11297,19 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+
+.areasearch {
+  background-color: #31d2f2;
+  border-radius: 9px;
+  padding: 5px;
+  border: 1px solid #030303;
+  margin-bottom: 3px;
+}
+
+.form__control {
+  color: #000;
+  padding: 10px 15px 2px;
+  /* background: #030303; */
+  border-bottom: 1px solid #030303;
+  border-radius: 5px;
+}

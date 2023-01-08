@@ -12,9 +12,18 @@ use Maatwebsite\Excel\Facades\Excel;
 class SubjectController extends Controller
 {
     //
-    public function index()
+    public function index(Request $request)
     {
-        $subjects = Subject::paginate(10);
+        $query = Subject::query();
+        if($request->name)
+        {
+            $query->where('name',$request->name);
+        }
+        if($request->code)
+        {
+            $query->where('code',$request->code);
+        }
+        $subjects = $query->paginate(10);
         return view('result.index',compact('subjects'));
     }
 
@@ -30,10 +39,8 @@ class SubjectController extends Controller
         ]);
         set_time_limit(400);
         $area =  DB::table('area')->insert([
-            'name'=>$request->area
-        ]);
-        $level = DB::table('level')->insert([
-            'name'=>$request->level
+            'name'=>$request->area,
+            'level_id'=>$request->level
         ]);
         Excel::import(new SubjectImport, $request->file('file')->store('files'));
        

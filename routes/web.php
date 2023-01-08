@@ -17,7 +17,7 @@ use App\Http\Controllers\WebsiteController;
 */
 
 Route::get('/', [WebsiteController::class,'index'])->name('index');
-
+Route::get('/result/{id}',[WebsiteController::class,'result'])->name('index.result');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::middleware(['auth'])->prefix('admin')->group(function(){
     Route::get('result',[SubjectController::class,'index'])->name('admin.result');
