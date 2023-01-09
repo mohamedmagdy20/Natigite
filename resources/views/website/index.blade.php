@@ -6,28 +6,25 @@
         <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="{{asset('front/images/1.webp')}}" alt="..." /></div>
         <div class="col-lg-5">
             <h1 class="font-weight-light">     
-                أهلاً بكم في موقع <span class="text-info text-bold">نذاكر</span> التعليمي لنتائج الامتحانات
+                أهلاً بكم في موقع <span class="text-info text-bold">نتيجتي</span> التعليمي لنتائج الامتحانات
             </h1>
             <p>
                 نقدم لكم خدمات متميزة مثل الاستعلام عن نتيجة الشهادة الإعدادية بالإسم ورقم الجلوس.
 
-                نقدم لكم في موقع بوابة نذاكر نتيجة الصف الثالث الإعدادي 2022 بالاسم ورقم الجلوس الترم الأول في جميع المحافظات. كما نقدم للمعلمين وللمدارس حصرياً خدمة عمل شهادة تقدير للطلاب المتفوقين
+                نقدم لكم في موقع بوابة نذاكر نتيجة الصف الثالث الإعدادي 2023 بالاسم ورقم الجلوس الترم الأول في جميع المحافظات. كما نقدم للمعلمين وللمدارس حصرياً خدمة عمل شهادة تقدير للطلاب المتفوقين
                 
-                ترقبوا نتيجة الثانوية العامة 2022 بالاسم ورقم الجلوس مع إمكانية معرفة الترتيب والمجاميع التكرارية للثانوية العامة والعديد من الخدمات المتميزة فقط وحصرياً عبر موقع نذاكر..
-                
-                 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-                
+                ترقبوا نتيجة الثانوية العامة 2023 بالاسم ورقم الجلوس مع إمكانية معرفة الترتيب والمجاميع التكرارية للثانوية العامة والعديد من الخدمات المتميزة فقط وحصرياً عبر موقع نذاكر..  
                 برجاء الانضمام لقناتنا على تليجرام لمتابعة أخبار النتيجة لحظة بلحظة ومتابعة نشر النتائج عبر موقعنا: قناة نذاكر على تليجرام.
                 
-                موقع نذاكر يقدم0 نتيجة الشهادة الإعدادية 2022 بالاسم ورقم الجلوس حصرياً مع إمكانية تحميل شهادة تقدير للطلاب المتفوقين.
+                موقع نذاكر يقدم0 نتيجة الشهادة الإعدادية 2023 بالاسم ورقم الجلوس حصرياً مع إمكانية تحميل شهادة تقدير للطلاب المتفوقين.
 
             </p>
             <a class="btn btn-info" href="{{route('index')}}" style="color: #fff">ابحث عن النتيجة</a>
         </div>
     </div>
     <div class="alert-message alert alert-block alert-info no-print"><b>
-        هام جداً: انضم لقناتنا على تليجرام لمعرفة أخبار النتيجة لحظة بلحظة من هنا: </b><a href="https://t.me/natiganezakr" style="display: inline-block;background-color: white;border-radius: 5px;width: 50px;text-align: center;color: #2daae1;border: 1.5px dotted black;"><i class="fa fa-telegram" aria-hidden="true"></i></a><br>  
-        تابعنا عبر فيسبوك : <div class="fb-like fb_iframe_widget" data-href="https://www.facebook.com/nezakr" data-width="30" data-layout="button_count" data-action="like" data-size="small" data-share="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=676280533135342&amp;container_width=1108&amp;href=https%3A%2F%2Fwww.facebook.com%2Fnezakr&amp;layout=button_count&amp;locale=ar_AR&amp;sdk=joey&amp;share=true&amp;size=small&amp;width=30"><span style="vertical-align: bottom; width: 150px; height: 28px;"><iframe name="ff9be318ca4574" width="30px" height="1000px" data-testid="fb:like Facebook Social Plugin" title="fb:like Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://web.facebook.com/v5.0/plugins/like.php?action=like&amp;app_id=676280533135342&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df1abfd348946bb%26domain%3Dnatiga.nezakr.net%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fnatiga.nezakr.net%252Ff26b679f8b6645c%26relation%3Dparent.parent&amp;container_width=1108&amp;href=https%3A%2F%2Fwww.facebook.com%2Fnezakr&amp;layout=button_count&amp;locale=ar_AR&amp;sdk=joey&amp;share=true&amp;size=small&amp;width=30" style="border: none; visibility: visible; width: 150px; height: 28px;" class=""></iframe></span></div>
+        هام جداً: انضم لقناتنا على تليجرام لمعرفة أخبار النتيجة لحظة بلحظة من هنا: </b><a href="{{route('index')}}" style="display: inline-block;background-color: white;border-radius: 5px;width: 50px;text-align: center;color: #2daae1;border: 1.5px dotted black;"><i class="fa fa-telegram" aria-hidden="true"></i></a><br>  
+        تابعنا عبر فيسبوك : <div class="fb-like fb_iframe_widget" data-href="https://www.facebook.com/"><i class="fa fa-facebook"></i> </div>
         </div>
   
         <!-- Call to Action-->
@@ -80,10 +77,22 @@
         <div class="card h-100" style="background-color:#b6effb !important ">
             <div class="card-body">
                 <h3 class="card-title ">اخر الاخبار</h3>
-                <p>ظهرت على موقع نذاكر حصرياً <a href="{{route('index.result',$last_update->id)}}">{{$last_update->name}}</a>..
+                @if (empty($last_update))
+                <p>ظهرت على موقع نتيجتي حصرياً 
+                    <a href="{{route('index.result',$last_update->id)}}">{{$last_update->name}}
+                    </a>..
 
-                    ونقدم لكم أيضاً في موقع نذاكر وحصرياً نتيجة الثانوية العامة 2022 بالاسم ورقم الجلوس مع إمكانية معرفة الترتيب والمجاميع التكرارية للثانوية العامة والعديد من الخدمات المتميزة..</p>
-            </div>
+                    ونقدم لكم أيضاً في موقع نتيجتي وحصرياً نتيجة الثانوية العامة 2023 بالاسم ورقم الجلوس مع إمكانية معرفة الترتيب والمجاميع التكرارية للثانوية العامة والعديد من الخدمات المتميزة..</p>
+                    
+                @else
+                <p>
+                    ترقبو النتائج قريبا 
+                    ونقدم لكم أيضاً في موقع نتيجتي وحصرياً نتيجة الثانوية العامة 2023 بالاسم ورقم الجلوس مع إمكانية معرفة الترتيب والمجاميع التكرارية للثانوية العامة والعديد من الخدمات المتميزة..
+                   
+                </p>                    
+                @endif
+            
+                </div>
         </div>
     </div>
 
