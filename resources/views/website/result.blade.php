@@ -34,9 +34,7 @@
 <div class="areasearch" style="color: #fff">
 <h1 style="color:white">نتيجة {{$level->name}}  بالاسم ورقم الجلوس </h1>
 <form class="form" action="{{route('index.result',$level->id)}}" method="get">
-    @csrf
 <div class="form__control">
-{{-- <input type="hidden" name="c" value="Alexandria"> --}}
 <span class="searchBy">البحث بـ </span>
 <label class="containerb">
  <input type="radio" checked="checked" value="num" name="type">
@@ -56,13 +54,7 @@
 </div>
 </form></div>
 
-@if(empty($result))
-<div class="container">
-    <div class="alert alert-danger">
-        لم يتم العثور علي النتيجه برجاء اعاده البحث
-    </div>
-</div>
-@else
+@if(!empty($result))
 <div class="panel" style="height: auto !important;">
     <table class="table redTable2">
     <thead> <tr>
@@ -87,24 +79,6 @@
 </td> </tr>
     <tr> <th>المجموع الكلي</th>
     <td><span style="color:green;">{{$result['total']}}</span></td>
-    </tr>
-    <tr class="no-print"> <th>شارك نتيجتك</th>
-    <td> <div align="center"> <a href="https://www.facebook.com/sharer.php?u=https://www.natiga-4dk.net/menia/?type=num%26k=4545&amp;hashtag=%23نتائج_الإمتحانات" target="_blank">
-    <span style="margin-left: 5px;display: inline-block;height: 24px;width: 24px;line-height: 24px;border-radius: 24px;background-color: #3c5b9b;color: white;text-align: center;font-size: 13px;">
-    <i class="fa fa-facebook"></i>
-    </span>
-    </a>
-    
-    <a href="https://twitter.com/share?url=https://www.natiga-4dk.net/menia/?type=num%26k=4545&amp;text=مرحبا!%20شاهد%20نتيجتي%20عبر%20موقع%20نتيجة نت%20 &amp;hashtags=نتائج_الإمتحانات" target="_blank">
-    <span style="margin-left: 5px;display: inline-block;height: 24px;width: 24px;line-height: 24px;border-radius: 24px;background-color: #2daae1;color: white;text-align: center;font-size: 13px;">
-    <i class="fa fa-twitter"></i>
-    </span> </a>
-    <a href="whatsapp://send?text=https://www.natiga-4dk.net/menia/?type=num%26k=4545 نتائج الامتحانات" data-action="share/whatsapp/share" target="_blank">
-    <span style="margin-left: 5px;display: inline-block;height: 24px;width: 24px;line-height: 24px;border-radius: 24px;background-color: #25D366;color: white;text-align: center;font-size: 13px;">
-    <i class="fa fa-whatsapp"></i>
-    </span>
-    </a>
-    </div></td>
     </tr>
     </tbody>
     </table>
