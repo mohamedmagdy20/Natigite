@@ -11,6 +11,7 @@ class WebsiteController extends Controller
     //
     public function index()
     {
+
         $levels_one = DB::table('area')->where('level_id',4)->get();
         $levels_two = DB::table('area')->where('level_id',5)->get();
         $levels_three = DB::table('area')->where('level_id',6)->get();
@@ -23,7 +24,7 @@ class WebsiteController extends Controller
         $levels_one = DB::table('area')->where('level_id',4)->get();
         $levels_two = DB::table('area')->where('level_id',5)->get();
         $levels_three = DB::table('area')->where('level_id',6)->get();
-       
+    
         $level =DB::table('area')->where('id',$id)->first();
         // return $level;
         $query = Subject::query();
@@ -31,15 +32,30 @@ class WebsiteController extends Controller
             if($request->type == 'num')
             {
                 $result = $query->where('code',$request->result)->where('area_id',$id)->latest()->first();
+                if($result != null)
+                {
+                    $result = [$result];
+                }else{
+                    $result = '';
+                }
                 return view('website.result',compact('result','level','levels_one','levels_two','levels_three'));
             }
             if($request->type == 'ename')
             {
-                $result = $query->where('name',$request->result)->where('area_id',$id)->latest()->first();
+                $result = $query->where('area_id',$id)->where('name', 'like', '%' . $request->result . '%')->paginate(10);
                 return view('website.result',compact('result','level','levels_one','levels_two','levels_three'));
             }
             $result ='';
         return view('website.result',compact('result','level','levels_one','levels_two','levels_three'));
+    }
+
+    public function show($id)
+    {
+        $levels_one = DB::table('area')->where('level_id',4)->get();
+        $levels_two = DB::table('area')->where('level_id',5)->get();
+        $levels_three = DB::table('area')->where('level_id',6)->get();
+        $result = Subject::find($id);
+        return view('website.show',compact('result','levels_one','levels_two','levels_three'));
     }
 
 }

@@ -9,22 +9,13 @@
                 أهلاً بكم في موقع <span class="text-info text-bold">نتيجتي</span> التعليمي لنتائج الامتحانات
             </h1>
             <p>
-                نقدم لكم خدمات متميزة مثل الاستعلام عن نتيجة الشهادة الإعدادية بالإسم ورقم الجلوس.
-
-                نقدم لكم في موقع بوابة نذاكر نتيجة الصف الثالث الإعدادي 2023 بالاسم ورقم الجلوس الترم الأول في جميع المحافظات. كما نقدم للمعلمين وللمدارس حصرياً خدمة عمل شهادة تقدير للطلاب المتفوقين
-                
-                ترقبوا نتيجة الثانوية العامة 2023 بالاسم ورقم الجلوس مع إمكانية معرفة الترتيب والمجاميع التكرارية للثانوية العامة والعديد من الخدمات المتميزة فقط وحصرياً عبر موقع نذاكر..  
-                برجاء الانضمام لقناتنا على تليجرام لمتابعة أخبار النتيجة لحظة بلحظة ومتابعة نشر النتائج عبر موقعنا: قناة نذاكر على تليجرام.
-                
-                موقع نذاكر يقدم0 نتيجة الشهادة الإعدادية 2023 بالاسم ورقم الجلوس حصرياً مع إمكانية تحميل شهادة تقدير للطلاب المتفوقين.
-
+                نقدم لكم نتائج الشهادة الابتدائية والشهادة الاعدادية بالاسم ورقم الجلوس جميع محافظات مصر الفصل الدراسي الاول 2022-2023، مع امكانية البحث برقم الجلوس او الاسم وعرض النتائج بالاضافة الي عمل شهادات تقدير للطلاب المتفوقين وتراقبوا نتيجة الشهادة الاعدادية بالاسم خلال الساعات القادمة في جميع المحافظات
             </p>
-            <a class="btn btn-info" href="{{route('index')}}" style="color: #fff">ابحث عن النتيجة</a>
+            <a class="btn btn-info" href="{{route('index')}}#natiga" style="color: #fff">ابحث عن النتيجة</a>
         </div>
     </div>
     <div class="alert-message alert alert-block alert-info no-print"><b>
-        هام جداً: انضم لقناتنا على تليجرام لمعرفة أخبار النتيجة لحظة بلحظة من هنا: </b><a href="{{route('index')}}" style="display: inline-block;background-color: white;border-radius: 5px;width: 50px;text-align: center;color: #2daae1;border: 1.5px dotted black;"><i class="fa fa-telegram" aria-hidden="true"></i></a><br>  
-        تابعنا عبر فيسبوك : <div class="fb-like fb_iframe_widget" data-href="https://www.facebook.com/"><i class="fa fa-facebook"></i> </div>
+        هام جداً: انضم لصفحتنا على الفيس بوك لمعرفة أخبار النتيجة لحظة بلحظة من هنا: </b><a href="https://www.facebook.com/nategmsryh" style="display: inline-block;background-color: white;border-radius: 50%;width: 30px;text-align: center;color: blue;border: 1.5px dotted black;"><i class="fa fa-facebook" aria-hidden="true"></i></a><br>  
         </div>
   
         <!-- Call to Action-->
@@ -32,7 +23,7 @@
         <div class="card-body"><p class="text-white m-0">This call to action card is a great place to showcase some important information or display a clever tagline!</p></div>
     </div> --}}
     <!-- Content Row-->
-    <div class="row gx-4 gx-lg-5">
+    <div class="row gx-4 gx-lg-5" id="natiga">
         <div class="col-md-4 mb-5">
             <div class="card h-100">
                 <div class="card-body">
@@ -75,8 +66,8 @@
 
     <div class="col-md-12 mb-5">
         <div class="card h-100" style="background-color:#b6effb !important ">
-            <div class="card-body">
-                <h3 class="card-title ">اخر الاخبار</h3>
+            <div class="card-body" id="news">
+                <h3 class="card-title " >اخر الاخبار</h3>
                 @if (empty($last_update))
                 <p>ظهرت على موقع نتيجتي حصرياً 
                     <a href="{{route('index.result',$last_update->id)}}">{{$last_update->name}}

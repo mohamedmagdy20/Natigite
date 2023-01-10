@@ -2,12 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="يوفر موقع نتائج مصرية nategmsryh الاستعلام عن نتيجة الشهادة الابتدائية 2023 بالاسم ورقم الجلوس بالاضافة الي نتيجة الشهادة الاعدادية 2023 بالتعاون مع مديرية التربية والتعليم , موقع نتائج مصرية نتيجة الشهادة الإعدادية بالإسم , نتيجة الاعدادية برقم الجلوس, نتيجة الصف الثالث الإعدادي اليوم السابع , نتيجة سنة 3 إعدادي برقم الجلوس فقط ، كما يقدم موقع نتائج مصرية الإستعلام عن نتيجة الشهادة الابتدائية بالإسم ورقم الجلوس، و نتيجة الصف السادس الابتدائي فضلاً علي حصولنا علي نتيجة الشهادة الإعدادية الأزهرية ، ونتيجة الابتدائية العامة الأزهرية برقم الجلوس والإسم فقط ">
+    <link rel="canonical" href="https://nategmsryh.com/">
+    <meta property="og:locale" content="ar">
+    <meta property="og:site_name" content="نتائج مصرية">
+    <meta property="og:title" content="نتائج مصرية - نتيجة الشهادة الإعدادية 2023 بالاسم ورقم الجلوس">
+    <meta property="og:description" content="يوفر موقع نتائج مصرية nategmsryh الاستعلام عن نتيجة الشهادة الابتدائية 2023 بالاسم ورقم الجلوس بالاضافة الي نتيجة الشهادة الاعدادية 2023 بالتعاون مع مديرية التربية والتعليم , موقع نتائج مصرية نتيجة الشهادة الإعدادية بالإسم , نتيجة الاعدادية برقم الجلوس, نتيجة الصف الثالث الإعدادي اليوم السابع , نتيجة سنة 3 إعدادي برقم الجلوس فقط ، كما يقدم موقع نتائج مصرية الإستعلام عن نتيجة الشهادة الابتدائية بالإسم ورقم الجلوس، و نتيجة الصف السادس الابتدائي فضلاً علي حصولنا علي نتيجة الشهادة الإعدادية الأزهرية ، ونتيجة الابتدائية العامة الأزهرية برقم الجلوس والإسم فقط ">
+    <meta property="og:url" content="https://nategmsryh.com/">
+    <meta property="og:image" content="https://nategmsryh.com/image.png">
+    <meta property="og:image:alt" content="نتائج مصرية - نتيجة الشهادة الإعدادية 2023 بالاسم ورقم الجلوس">
+    <meta property="og:type" content="website">
+    <meta name="publisher" content="نتائج مصرية">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Amr saad">
+    <meta name="article:publisher" content="https://www.facebook.com/nategmsryh">
+    <meta name="twitter:site" content="@nategmsryh">
+    <meta name="twitter:creator" content="@nategmsryh">
+    <meta name="keywords" content="نتيجة الشهادة الابتدائية , نتيجة الشهادة الاعدادية , نتيجة الاعدادية 2023 , نتيجة الشهادة الابتدائية بالاسم , نتيجة الصف الثالث الاعدادي 2023 , نتيجة الصف السادس الابتدائي 2023 , نتيجة الشهادات العامة 2023 , نتيجة الشهادة الاعدادية الازهرية , نتيجة الشهادة الابتدائية الازهرية 2023 , نتيجة 3 اعدادي , نتائج مصرية نتيجة الشهادة الاعدادية , نتيجة الشهادة الابتدائية محافظة القليوبية , موعد نتيجة الشهادة الاعدادية , موعد نتيجة الشهادة الابتدائية , موقع مديرية التربية والتعليم نتيجة الشهادة الاعدادية , مديرية التربية والتعليم نتيجة الشهادة الابتدائية">
     <title>{{ config('app.name') }}</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
           integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
           crossorigin="anonymous"/>
+   
 
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/css/toastr.css" rel="stylesheet" />

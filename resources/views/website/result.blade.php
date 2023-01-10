@@ -7,34 +7,24 @@
     <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="{{asset('front/images/1.webp')}}" alt="..." /></div>
     <div class="col-lg-5">
         <h1 class="font-weight-light">     
-            أهلاً بكم في موقع <span class="text-info text-bold">نذاكر</span> التعليمي لنتائج الامتحانات
+            أهلاً بكم في موقع <span class="text-info text-bold">نتائج مصرية</span> التعليمي لنتائج الامتحانات
         </h1>
         <p>
-            نقدم لكم خدمات متميزة مثل الاستعلام عن نتيجة الشهادة الإعدادية بالإسم ورقم الجلوس.
-
-            نقدم لكم في موقع بوابة نذاكر نتيجة الصف الثالث الإعدادي 2022 بالاسم ورقم الجلوس الترم الأول في جميع المحافظات. كما نقدم للمعلمين وللمدارس حصرياً خدمة عمل شهادة تقدير للطلاب المتفوقين
-            
-            ترقبوا نتيجة الثانوية العامة 2022 بالاسم ورقم الجلوس مع إمكانية معرفة الترتيب والمجاميع التكرارية للثانوية العامة والعديد من الخدمات المتميزة فقط وحصرياً عبر موقع نذاكر..
-            
-             
-            
-            برجاء الانضمام لقناتنا على تليجرام لمتابعة أخبار النتيجة لحظة بلحظة ومتابعة نشر النتائج عبر موقعنا: قناة نذاكر على تليجرام.
-            
-            موقع نذاكر يقدم نتيجة الشهادة الإعدادية 2022 بالاسم ورقم الجلوس حصرياً مع إمكانية تحميل شهادة تقدير للطلاب المتفوقين.
-
+          قدم لكم نتائج الشهادة الابتدائية والشهادة الاعدادية بالاسم ورقم الجلوس جميع محافظات مصر الفصل الدراسي الاول 2022-2023، مع امكانية البحث برقم الجلوس او الاسم وعرض النتائج بالاضافة الي عمل شهادات تقدير للطلاب المتفوقين وتراقبوا نتيجة الشهادة الاعدادية بالاسم خلال الساعات القادمة في جميع المحافظات
         </p>
         <a class="btn btn-info" href="#!" style="color: #fff">ابحث عن النتيجة</a>
     </div>
 </div>
 <div class="alert-message alert alert-block alert-info no-print"><b>
-    هام جداً: انضم لقناتنا على تليجرام لمعرفة أخبار النتيجة لحظة بلحظة من هنا: </b><a href="https://t.me/natiganezakr" style="display: inline-block;background-color: white;border-radius: 5px;width: 50px;text-align: center;color: #2daae1;border: 1.5px dotted black;"><i class="fa fa-telegram" aria-hidden="true"></i></a><br>  
-    تابعنا عبر فيسبوك : <div class="fb-like fb_iframe_widget" data-href="https://www.facebook.com/nezakr" data-width="30" data-layout="button_count" data-action="like" data-size="small" data-share="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=676280533135342&amp;container_width=1108&amp;href=https%3A%2F%2Fwww.facebook.com%2Fnezakr&amp;layout=button_count&amp;locale=ar_AR&amp;sdk=joey&amp;share=true&amp;size=small&amp;width=30"><span style="vertical-align: bottom; width: 150px; height: 28px;"><iframe name="ff9be318ca4574" width="30px" height="1000px" data-testid="fb:like Facebook Social Plugin" title="fb:like Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://web.facebook.com/v5.0/plugins/like.php?action=like&amp;app_id=676280533135342&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df1abfd348946bb%26domain%3Dnatiga.nezakr.net%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fnatiga.nezakr.net%252Ff26b679f8b6645c%26relation%3Dparent.parent&amp;container_width=1108&amp;href=https%3A%2F%2Fwww.facebook.com%2Fnezakr&amp;layout=button_count&amp;locale=ar_AR&amp;sdk=joey&amp;share=true&amp;size=small&amp;width=30" style="border: none; visibility: visible; width: 150px; height: 28px;" class=""></iframe></span></div>
-    </div>
+  هام جداً: انضم لصفحتنا على الفيس بوك لمعرفة أخبار النتيجة لحظة بلحظة من هنا: </b><a href="https://www.facebook.com/nategmsryh" style="display: inline-block;background-color: white;border-radius: 50%;width: 30px;text-align: center;color: blue;border: 1.5px dotted black;"><i class="fa fa-facebook" aria-hidden="true"></i></a><br>  
+  </div>
 
 <div class="areasearch" style="color: #fff">
-<h1 style="color:white">نتيجة {{$level->name}}  بالاسم ورقم الجلوس </h1>
-<form class="form" action="{{route('index.result',$level->id)}}" method="get">
+<h1 style="color:white" id="natigte">نتيجة {{$level->name}}  بالاسم ورقم الجلوس </h1>
+<form class="form" action="{{route('index.result',$level->id)}}#result123" method="get" >
+    @csrf
 <div class="form__control">
+{{-- <input type="hidden" name="c" value="Alexandria"> --}}
 <span class="searchBy">البحث بـ </span>
 <label class="containerb">
  <input type="radio" checked="checked" value="num" name="type">
@@ -55,34 +45,95 @@
 </form></div>
 
 @if(!empty($result))
-<div class="panel" style="height: auto !important;">
-    <table class="table redTable2">
-    <thead> <tr>
-    <th colspan="2" class="no-print"> بيانات الطالب</th>
-     </tr>
-    </thead>
-    <tbody>
-    <style>
-                .bg-info{background-color:#5bc0de!important;color:#fff}.bg-warning{background-color:#f0ad4e!important;color:#fff}.bg-primary{background-color:#0275d8!important;color:#fff}.bg-success{background-color:#5cb85c!important;color:#fff}.bg-danger{background-color:#d9534f!important;color:#fff}
-    </style>
-    <tr>
-    <th>اسم الطالب</th>
-    <td>{{$result['name']}}</td> </tr>
-    <tr> <th>رقم الجلوس</th>
-    <td>{{$result['code']}}</td> </tr>
-    <tr> <th>المدرسة</th>
-    <td>
-    {{$result['school_name']}}
-    </td> </tr> <tr> <th>الإدارة التعليمية</th>
-    <td>
-        {{$result['mangment_name']}}    
+@if (count($result) == 1)
+<div class="panel" style="height: auto !important;" id="result123">
+  <table class="table redTable2">
+  <thead> <tr>
+  <th colspan="2" class="no-print"> بيانات الطالب</th>
+   </tr>
+  </thead>
+  <tbody>
+  <style>
+              .bg-info{background-color:#5bc0de!important;color:#fff}.bg-warning{background-color:#f0ad4e!important;color:#fff}.bg-primary{background-color:#0275d8!important;color:#fff}.bg-success{background-color:#5cb85c!important;color:#fff}.bg-danger{background-color:#d9534f!important;color:#fff}
+  </style>
+  <tr>
+  <th>اسم الطالب</th>
+  <td>{{$result[0]['name']}}</td> </tr>
+  <tr> <th>رقم الجلوس</th>
+  <td>{{$result[0]['code']}}</td> </tr>
+  <tr> <th>المدرسة</th>
+  <td>
+  {{$result[0]['school_name']}}
+  </td> </tr> <tr> <th>الإدارة التعليمية</th>
+  <td>
+      {{$result[0]['mangment_name']}}    
 </td> </tr>
-    <tr> <th>المجموع الكلي</th>
-    <td><span style="color:green;">{{$result['total']}}</span></td>
-    </tr>
-    </tbody>
+  <tr> <th>المجموع الكلي</th>
+  <td><span style="color:green;">{{$result[0]['total']}}</span></td>
+  </tr>
+  <tr class="no-print"> <th>شارك نتيجتك</th>
+  <td> <div style="text-align: center;text-decoration: none"> 
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https://nategmsryh.com/result/{{$result[0]['area_id']}}?type={{$_GET['type']}}&result={{$_GET['result']}}&amp;hashtag=%23نتائج_الإمتحانات" target="_blank">
+      <span style="margin-left: 5px;display: inline-block;height: 24px;width: 24px;line-height: 24px;border-radius: 24px;background-color: blue;color: white;text-align: center;font-size: 13px;">
+      <i class="fa fa-facebook"></i>
+    </span>
+  </a>
+  
+  <a href="https://twitter.com/share?url=https://nategmsryh.com/result/{{$result[0]['area_id']}}?type={{$_GET['type']}}&result={{$_GET['result']}}&amp;text=شاهد&amp;hashtags=نتائج_الإمتحانات" target="_blank">
+  <span style="margin-left: 5px;display: inline-block;height: 24px;width: 24px;line-height: 24px;border-radius: 24px;background-color: #2daae1;color: white;text-align: center;font-size: 13px;">
+  <i class="fa fa-twitter"></i>
+  </span> </a>
+  <a href="whatsapp://send?text=https://nategmsryh.com/result/{{$result[0]['area_id']}}?type={{$_GET['type']}}&result={{$_GET['result']}}" data-action="share/whatsapp/share" target="_blank">
+  <span style="margin-left: 5px;display: inline-block;height: 24px;width: 24px;line-height: 24px;border-radius: 24px;background-color: #25D366;color: white;text-align: center;font-size: 13px;">
+  <i class="fa fa-whatsapp"></i>
+  </span>
+  </a>
+  </div></td>
+  </tr>
+  </tbody>
+  </table>
+  <h5>اولا مواد تضاف للمجموع</h5>
+  <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">الماده </th>
+          <th scope="col">الدرجه</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>اللغة العربية</td>
+          <td>{{$result[0]['arabic']}}</td>
+        </tr>
+        <tr>
+          <td>اللغة الانجليزية </td>
+          <td>{{$result[0]['english']}}</td>
+        </tr>
+        <tr>
+          <td>الجبر</td>
+          <td>{{$result[0]['algebra']}}</td>
+        </tr>
+
+        <tr>
+          <td>الهندسة</td>
+          <td>{{$result[0]['engineer']}}</td>
+        </tr>
+        <tr>
+          <td>مجموع الرياضيات</td>
+          <td>{{$result[0]['math']}}</td>
+        </tr>
+
+        <tr>
+          <td>العلوم</td>
+          <td>{{$result[0]['science']}}</td>
+        </tr>
+        <tr>
+          <td>الدراسات</td>
+          <td>{{$result[0]['social']}}</td>
+        </tr>
+      </tbody>
     </table>
-    <h5>اولا مواد تضاف للمجموع</h5>
+    <h5>ثانيا مواد لا تضاف للمجموع</h5>
     <table class="table table-striped">
         <thead>
           <tr>
@@ -92,69 +143,62 @@
         </thead>
         <tbody>
           <tr>
-            <td>اللغة العربية</td>
-            <td>{{$result['arabic']}}</td>
+              <td>دين</td>
+              <td>{{$result[0]['religin']}}</td>
           </tr>
           <tr>
-            <td>اللغة الانجليزية </td>
-            <td>{{$result['english']}}</td>
+              <td>تربية فنية</td>
+              <td>{{$result[0]['art']}}</td>
           </tr>
           <tr>
             <td>الجبر</td>
-            <td>{{$result['algebra']}}</td>
+            <td>{{$result[0]['algebra']}}</td>
           </tr>
 
           <tr>
-            <td>الهندسة</td>
-            <td>{{$result['engineer']}}</td>
-          </tr>
+              <td>حاسب آلي </td>
+              <td>{{$result[0]['computer']}}</td>
           <tr>
-            <td>مجموع الرياضيات</td>
-            <td>{{$result['math']}}</td>
-          </tr>
-
-          <tr>
-            <td>العلوم</td>
-            <td>{{$result['science']}}</td>
-          </tr>
-          <tr>
-            <td>الدراسات</td>
-            <td>{{$result['social']}}</td>
+              <td>تربية رياضيه</td>
+              <td>{{$result[0]['sport']}}</td>
           </tr>
         </tbody>
       </table>
-      <h5>ثانيا مواد لا تضاف للمجموع</h5>
-      <table class="table table-striped">
-          <thead>
-            <tr>
-              <th scope="col">الماده </th>
-              <th scope="col">الدرجه</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-                <td>دين</td>
-                <td>{{$result['religin']}}</td>
-            </tr>
-            <tr>
-                <td>تربية فنية</td>
-                <td>{{$result['art']}}</td>
-            </tr>
-            <tr>
-              <td>الجبر</td>
-              <td>{{$result['algebra']}}</td>
-            </tr>
-  
-            <tr>
-                <td>حاسب آلي </td>
-                <td>{{$result['computer']}}</td>
-            <tr>
-                <td>تربية رياضيه</td>
-                <td>{{$result['sport']}}</td>
-            </tr>
-          </tbody>
-        </table>
-    </div>
+  </div>
+@elseif (count($result) > 1)
+@foreach ($result as $r )
+<div class="panel" style="height: auto !important;" id="result123">
+  <table class="table redTable2">
+  <thead> <tr>
+  <th colspan="2" class="no-print"> بيانات الطالب</th>
+   </tr>
+  </thead>
+  <tbody>
+  <style>
+              .bg-info{background-color:#5bc0de!important;color:#fff}.bg-warning{background-color:#f0ad4e!important;color:#fff}.bg-primary{background-color:#0275d8!important;color:#fff}.bg-success{background-color:#5cb85c!important;color:#fff}.bg-danger{background-color:#d9534f!important;color:#fff}
+  </style>
+  <tr>
+  <th>اسم الطالب</th>
+  <td><a href="{{route('result.show',$r['id'])}}">{{$r['name']}} </a></td> </tr>
+  <tr> <th>رقم الجلوس</th>
+  <td>{{$r['code']}}</td> </tr>
+  <tr> <th>المدرسة</th>
+  <td>
+  {{$r['school_name']}}
+  </td> </tr> <tr> <th>الإدارة التعليمية</th>
+  <td>
+      {{$r['mangment_name']}}    
+</td> </tr>
+  <tr> <th>المجموع الكلي</th>
+  <td><span style="color:green;">{{$r['total']}}</span></td>
+  </tr>
+  </tbody>
+  </table>
+@endforeach
+<div class="d-flex justify-content-center">
+  {!! $result->withQueryString()->links() !!}
+</div>
+@endif
 @endif
 <div class="row gx-4 gx-lg-5 mt-5">
     <div class="col-md-4 mb-5">
